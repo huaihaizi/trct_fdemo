@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.liteav:LiteAVSDK_TRTC:6.5.7272@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.tencent.liteav/LiteAVSDK_TRTC/6.5.7272/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.tencent.liteav/LiteAVSDK_TRTC/6.5.7272/jars/libs/LiteAVSDK_TRTC-0.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.tencent.liteav/LiteAVSDK_TRTC/6.5.7272/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.liteav/LiteAVSDK_TRTC/6.5.7272/549f0a6f9284fc649f75a9022a2865cbd7e69de4/LiteAVSDK_TRTC-6.5.7272-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

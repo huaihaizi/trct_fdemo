@@ -91,8 +91,11 @@ public class TRTCMainActivity extends Activity implements View.OnClickListener, 
         String userId;
         int streamType;
 
+        @Override
         public boolean equals(Object obj) {
-            if (obj == null || userId == null) return false;
+            if (obj == null || userId == null){
+                return false;
+            }
             VideoStream stream = (VideoStream) obj;
             return (this.streamType == stream.streamType && this.userId.equals(stream.userId));
         }
@@ -116,7 +119,6 @@ public class TRTCMainActivity extends Activity implements View.OnClickListener, 
         String selfUserId = intent.getStringExtra("userId");
         String userSig = intent.getStringExtra("userSig");
         mEnableCustomVideoCapture = intent.getBooleanExtra("customVideoCapture", false);
-
         if (mEnableCustomVideoCapture) {
             mVideoFile = intent.getStringExtra("videoFile");
             mCustomCapture = new TestSendCustomVideoData(this);
@@ -124,7 +126,6 @@ public class TRTCMainActivity extends Activity implements View.OnClickListener, 
         }
         trtcParams = new TRTCCloudDef.TRTCParams(mSdkAppId, selfUserId, userSig, roomId, "", "");
         trtcParams.role = intent.getIntExtra("role", TRTCCloudDef.TRTCRoleAnchor);
-
         mAppScene = intent.getIntExtra("AppScene", TRTCCloudDef.TRTC_APP_SCENE_VIDEOCALL);
 
         //初始化 UI 控件
